@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>โปรแกรมหารค่าใช้จ่าย</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .calculator {
+            background: white;
+            padding: 20px 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .result h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        .result p {
+            font-size: 18px;
+            color: #007bff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="calculator">
+        <h1>หารค่าใช้จ่าย</h1>
+        
+        <div class="input-group">
+            <label for="bill-amount">ยอดเงินทั้งหมด (บาท)</label>
+            <input type="number" id="bill-amount" placeholder="ระบุยอดเงิน">
+        </div>
+
+        <div class="input-group">
+            <label for="tip-percentage">ทิป (%)</label>
+            <input type="number" id="tip-percentage" placeholder="ระบุทิปเป็นเปอร์เซ็นต์ (ถ้ามี)">
+        </div>
+
+        <div class="input-group">
+            <label for="people-count">จำนวนคน</label>
+            <input type="number" id="people-count" placeholder="ระบุจำนวนคน">
+        </div>
+
+        <button>คำนวณ</button>
+
+        <div class="result">
+            <h2>ยอดที่ต้องจ่ายคนละ</h2>
+            <p>0.00 บาท</p>
+        </div>
+    </div>
+
+</body>
+</html>
